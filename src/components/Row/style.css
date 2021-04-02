@@ -89,6 +89,7 @@ a:hover
   font-size: 2vh;
   margin-left: 1vw;
   margin-right: 0.5vw;
+  display: none;
 }
 
 .name{

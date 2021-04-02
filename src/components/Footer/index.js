@@ -8,7 +8,7 @@ export default function Header(props) {
     <>
     <div className="footer" >
       <a className="linkApi" target="__blank" href="https://pokeapi.co/">Data from pokeapi.co</a>
-      <a className="linkGit" target="__blank" href="https://pokeapi.co/">Create from: Nathan Lucena <GitHubIcon fontSize="small" padding="20px"/> </a>
+      <a className="linkGit" target="__blank" href="https://github.com/nathanlucena">Create from: Nathan Lucena <GitHubIcon style={{ fontSize:15 }} padding="20px"/> </a>
     </div>
  </>
   );

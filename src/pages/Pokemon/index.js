@@ -111,6 +111,7 @@ function pokemonNameSplit(name){
                 }
   
                 filterEvoLine = filterEvoLine.concat(plusEvo);
+                
               //Evolution Line of Wurmpler
               }else  if(responseEvoChain.data.chain.evolves_to.length === 2){
                 evoLine.push(responseEvoChain.data.chain.evolves_to.map(evo => evo.species.url));
@@ -125,8 +126,6 @@ function pokemonNameSplit(name){
                 filterEvoLine = filterEvoLine.concat(evoLine[3]);
               }
            
-              
-            
             }
           };
 
@@ -135,6 +134,7 @@ function pokemonNameSplit(name){
             let link = await axios.get(evo);
             index = link.data.pokedex_numbers[0].entry_number;
             let linkSprite = await axios.get(`https://pokeapi.co/api/v2/pokemon/${index}`);
+
             namesEvo.push(linkSprite.data.name);
             setEvolutionNames(namesEvo.map(evo => evo));
 
@@ -560,7 +560,7 @@ function pokemonNameSplit(name){
 
                       </td>
                       <td className="tdInfo" width="49%">
-                        <b>Flavor</b>
+                        <b>Description</b>
                         <div className="block" style={{ margin: '2vh' }}>
                           <p>{flavor} </p>
                         </div>
@@ -744,22 +744,22 @@ function pokemonNameSplit(name){
                           <tbody>
                             <tr className="trInfo">
                               <td className="block">
-                                hp: {evs['hp']};
+                                Hp: {evs['hp']};
                         </td>
                               <td className="block">
-                                attack: {evs['attack']};
+                                Attack: {evs['attack']};
                         </td>
                               <td className="block">
-                                defense: {evs['defense']};
+                                Defense: {evs['defense']};
                         </td>
                               <td className="block">
-                                speed: {evs['speed']};
+                                Speed: {evs['speed']};
                         </td>
                               <td className="block">
-                                spAttack: {evs['spAttack']};
+                                Sp. Attack: {evs['spAttack']};
                         </td>
                               <td className="block">
-                                spDefense: {evs['spDefense']};
+                                Sp. Defense: {evs['spDefense']};
                         </td>
                             </tr>
                           </tbody>

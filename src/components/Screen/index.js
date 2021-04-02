@@ -128,14 +128,15 @@ export default function Home() {
             variant="outlined"
             select
           >
-            <MenuItem value="gen0">All generation</MenuItem>
-            <MenuItem value="gen1">generation 1</MenuItem>
-            <MenuItem value="gen2">generation 2</MenuItem>
-            <MenuItem value="gen3">generation 3</MenuItem>
-            <MenuItem value="gen4">generation 4</MenuItem>
-            <MenuItem value="gen5">generation 5</MenuItem>
-            <MenuItem value="gen6">generation 6</MenuItem>
-            <MenuItem value="gen67">generation 7</MenuItem>
+               <MenuItem value="gen0">All Generation</MenuItem>
+            <MenuItem value="gen1">Generation 1</MenuItem>
+            <MenuItem value="gen2">Generation 2</MenuItem>
+            <MenuItem value="gen3">Generation 3</MenuItem>
+            <MenuItem value="gen4">Generation 4</MenuItem>
+            <MenuItem value="gen5">Generation 5</MenuItem>
+            <MenuItem value="gen6">Generation 6</MenuItem>
+            <MenuItem value="gen7">Generation 7</MenuItem>
+            <MenuItem value="gen8">Generation 8</MenuItem>
           </TextField>
         </div>
       </div>

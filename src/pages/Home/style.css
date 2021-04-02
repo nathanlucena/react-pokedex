@@ -60,7 +60,7 @@
     .screen{
         margin: 3vh;
         margin-left: -1vh;
-        width: 150vh;
+        min-width: 90%;
         background-color:#00e9ff;
         border: black;
         border-style: solid;
