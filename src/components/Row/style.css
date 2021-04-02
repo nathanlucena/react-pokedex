@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover 
+{ 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+.pokeRow{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items:center;
+    font-family: 'Press Start 2P', cursive;
+    border: solid ;
+    border-width: 0 0.3vh 0.3vh 0; 
+    transition:0.3s;
+}
+
+.arrowHover{
+    display: none;
+    transition:0.5s;
+    
+}
+
+.pokeRow:hover .arrowHover{
+    display: block;
+}
+.pokeRow:hover{
+    padding: 4vh;
+}
+
+.index{
+    font-size: 2.7vh;
+    margin-left: 3vh;
+    margin-right: 5vh;
+}
+
+.name{
+    font-size: 3.6vh;
+    text-transform: capitalize;
+    display: flex;
+    justify-content:flex-start;
+    margin-right: 6vh;
+    margin-left: 3vh;
+    width: 40vh;
+}
+
+
+.type{
+    text-transform:uppercase;
+    font-size: 2.5vh;
+    margin-right: 2vh;
+    padding: 1vh;
+    border-radius: 1vh 1vh 1vh;
+    border: 0.5vh solid #000;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.sprite{
+   max-width: 11vh;
+   display: flex;
+   width: 10%;
+   margin-left: auto ;
+   margin-right: 3vh;
+}
+
+
+@media(max-width: 900px){
+  .pokeRow{
+      height: 15vh;
+      display: flex;
+      flex-flow: row;
+      align-items:center;
+      justify-content: center;
+      font-family: 'Press Start 2P', cursive;
+      border: solid ;
+      border-width: 0 0.3vh 0.3vh 0; 
+  }
+
+  
+.index{
+  font-size: 2vh;
+  margin-left: 1vw;
+  margin-right: 0.5vw;
+}
+
+.name{
+  font-size: 2.5vh;
+  text-transform: capitalize;
+  display: flex;
+  justify-content:flex-start;
+  margin-right: 6vh;
+  margin-left: 1vh;
+  width: 15vh;
+
+}
+
+
+.type{
+  text-transform:uppercase;
+  font-size: 2.5vh;
+  margin-right: 2vh;
+  padding: 1vh;
+  border-radius: 1vh 1vh 1vh;
+  border: 0.5vh solid #000;
+  font-family: 'Press Start 2P', cursive;
+  display: none;
+}
+
+.sprite{
+ max-width: 15vh;
+ display: flex;
+ width: 25%;
+ margin-right: 0.5vw;
+}
+
+
+.arrowHover{
+  display: none;
+ 
+  
+}
+
+.pokeRow:hover .arrowHover{
+  display: none;
+}
+.pokeRow:hover{
+  padding: 0vh;
+
+}
+
+
+
+}
+
+

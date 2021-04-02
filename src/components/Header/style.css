@@ -1,0 +1,12 @@
+.logo-container{
+    height: 15vh;
+    background-color: #CC0000;
+    display:  flex;
+    justify-content: center;
+}
+
+.image{
+    height: 14vh;
+    padding-bottom: 4vh;
+    padding-top: 2vh;
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.screen-border{
+    background-color:#FFFAFA;
+    height:500vh ;
+    margin-top: 0;
+    display: flex;
+    margin-left:25vh;
+    margin-right: 25vh;
+    
+}  
+
+.screen-border:before {
+    content: "";
+    border-style: solid;
+    border-width: 0 70px 70px 0;
+    border-color: #CC0000 #FFFAFA #CC0000 #CC0000;
+}
+
+.screen{
+    margin: 8vh;
+    margin-left: -1vh;
+    width: 100%;
+    background-color:#00e9ff;
+    font-size: 30px;
+    border: black;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.filters{
+    display: flex;
+    align-items: center;
+   margin-bottom: -7vh;
+   margin-left: 15vw;
+}
+
+.filtersModal{
+    background-color: #FFFAFA;
+    border: #000 solid 3px;
+    border-radius: 5px;
+    width: 60vw;
+    height: 30vh;
+
+    margin:auto;
+    margin-top: 30vh;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+
+.filterSelect{
+    margin-left: 2vw;
+}
+
+.titleModal{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media ( max-width: 800px ) {
+    .filters{
+        display: none;
+    }
+    .filterSelect{
+        margin-left: 0px;
+    }
+
+}
+
+
+.modalIcon{
+    display: table-cell;
+    border: #000 solid 1px;
+    border-radius: 5px;
+    background-color: #FFFAFA;
+    position: absolute;
+    margin-left: 82vw;
+    margin-top: -18vw;
+    padding:1vh;
+}
